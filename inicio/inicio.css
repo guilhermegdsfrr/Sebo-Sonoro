@@ -1,0 +1,201 @@
+
+
+.hero {
+    min-height: 570px;
+    padding: 70px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.hero-texto {
+    max-width: 530px;
+}
+
+.subtitulo {
+    color: #a46d35;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.hero h2 {
+    font-size: 55px;
+    line-height: 1.1;
+    margin: 20px 0;
+}
+
+.hero h2 span {
+    color: #a46d35;
+}
+
+.hero p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #665b50;
+    margin-bottom: 30px;
+}
+
+.hero-imagem {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+
+.hero-imagem img {
+    width: 440px;
+    height: 440px;
+    object-fit: contain;
+    display: block;
+    background: transparent;
+}
+
+.apresentacao {
+    background-color: #e9dfce;
+    text-align: center;
+    padding: 75px 15%;
+}
+
+.apresentacao h2 {
+    font-size: 35px;
+    margin: 18px 0;
+}
+
+.apresentacao p {
+    max-width: 700px;
+    margin: auto;
+    color: #665b50;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+
+.servicos {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    padding: 75px 8%;
+}
+
+.servico {
+    background-color: #fffaf2;
+    border-radius: 10px;
+    flex: 1;
+    max-width: 350px;
+    overflow: hidden;
+    transition: 0.3s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.servico:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+.servico img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    display: block;
+}
+
+
+.servico-conteudo {
+    padding: 25px 22px 30px;
+    text-align: center;
+}
+
+.servico h3 {
+    font-size: 23px;
+    margin-bottom: 15px;
+    color: #30271f;
+}
+
+.servico p {
+    color: #665b50;
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+
+.chamada {
+    background-color: #49392c;
+    color: white;
+    text-align: center;
+    padding: 75px 15%;
+}
+
+.chamada h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.chamada p {
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+
+.botao-claro {
+    background-color: #d6a75d;
+    color: #29241f;
+}
+
+
+
+
+@media (max-width: 850px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-imagem img {
+        width: 340px;
+        height: 340px;
+        max-width: 100%;
+    }
+
+    .hero h2 {
+        font-size: 42px;
+    }
+
+    .servicos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servico {
+        width: 100%;
+        max-width: 450px;
+    }
+
+    .apresentacao {
+        padding: 60px 8%;
+    }
+
+    .chamada {
+        padding: 60px 8%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .hero h2 {
+        font-size: 35px;
+    }
+
+    .hero-imagem img {
+        width: 280px;
+        height: 280px;
+    }
+
+    .apresentacao h2,
+    .chamada h2 {
+        font-size: 27px;
+    }
+
+}
