@@ -1,0 +1,154 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    background-color: #f4efe6;
+    color: #30271f;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* =================================
+   CABEÇALHO E NAVEGAÇÃO
+================================= */
+
+.topo {
+    background-color: #29241f;
+    color: #f4efe6;
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 27px;
+    color: #d6a75d;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    color: #f4efe6;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.menu a:hover,
+.menu .ativo {
+    color: #d6a75d;
+}
+
+/* =================================
+   BOTÕES PADRÃO
+================================= */
+
+.botao {
+    display: inline-block;
+    background-color: #a46d35;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #78502b;
+    transform: translateY(-3px);
+}
+
+/* =================================
+   RODAPÉ
+================================= */
+
+.rodape {
+    background-color: #29241f;
+    color: #f4efe6;
+    padding: 55px 10% 20px;
+}
+
+.rodape-conteudo {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding-bottom: 40px;
+}
+
+.rodape-logo h2 {
+    color: #d6a75d;
+    margin-bottom: 15px;
+    font-size: 27px;
+}
+
+.rodape-conteudo h3 {
+    color: #d6a75d;
+    margin-bottom: 18px;
+}
+
+.rodape-conteudo p {
+    color: #c7bdb0;
+    line-height: 1.7;
+    max-width: 300px;
+}
+
+.rodape-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.rodape-links a {
+    color: #c7bdb0;
+    transition: 0.3s;
+}
+
+.rodape-links a:hover {
+    color: #d6a75d;
+}
+
+.rodape-final {
+    border-top: 1px solid #51483e;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    color: #a99e91;
+    font-size: 13px;
+}
+
+/* =================================
+   RESPONSIVIDADE GLOBAL
+================================= */
+
+@media (max-width: 850px) {
+
+    .topo {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .rodape-conteudo {
+        flex-direction: column;
+    }
+
+    .rodape-final {
+        flex-direction: column;
+        text-align: center;
+    }
+}
