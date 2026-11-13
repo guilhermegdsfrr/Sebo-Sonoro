@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #f4efe6;
     color: #30271f;
 }
@@ -29,9 +29,21 @@ a {
     align-items: center;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
 .logo h1 {
-    font-size: 27px;
+    margin: 0;
+    color: #e4e2e0;
+}
+
+.logo h2 {
+    margin: 0;
     color: #d6a75d;
+    font-size: xx-large;
 }
 
 .menu {
